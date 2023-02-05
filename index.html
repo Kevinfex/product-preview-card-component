@@ -20,17 +20,6 @@
 
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
   </style>
 </head>
 
@@ -39,12 +28,10 @@
   <main class="main">
     <div class="card">
       <section class="card__section">
-        <picture class="main__picture">
-          <source srcset="./images/image-product-desktop.jpg" class="main__img"
-          media="(min-width: 1440px)">
-  
-          <img class="main__img" src="./images/image-product-mobile.jpg" alt="Product mobile">
-        </picture>
+          <img src="./images/image-product-desktop.jpg" class="main__img main__img--desktop" alt="Product desktop">
+
+          <img class="main__img main__img--mobile" src="./images/image-product-mobile.jpg" alt="Product mobile">
+       
       </section>
       <article class="card__article">
         <p class="card__text">Perfume</p>
@@ -62,13 +49,14 @@
         <button class="card__button">
           <img src="images/icon-cart.svg" alt="Icon"> Add to Cart
         </button>
-      </article>  
+      </article>
     </div>
   </main>
 
   <div class="attribution">
-  <p>  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded &#128147 by <a href="#">Kevin Espinoza Poma</a>.</p>
+    <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded &#128147 by <a href="https://www.frontendmentor.io/profile/Kevinfex" target="_blank">Kevin Espinoza
+        Poma</a>.</p>
   </div>
 
 </body>
